@@ -1,0 +1,93 @@
+<p id="contact">contact works!</p>
+<button
+  type="button"
+  mdbBtn
+  color="default"
+  rounded="true"
+  data-toggle="modal"
+  data-target="#basicExample"
+  (click)="frame.show()"
+  style="text-align: center"
+  mdbWavesEffect
+>
+  To View My C.V
+</button>
+<img src="/src/assets/ezgif.com-gif-maker.jpg" class="img-fluid" height="40" width="20"><br>
+<img class="img-responsive" src="/src/assets/CVpartA.PNG"
+   alt="Image of ballons flying over canyons with mask pattern one."/>
+
+<div
+  mdbModal
+  #frame="mdbModal"
+  class="modal fade top"
+  id="frameModalTop"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="myModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-notify modal-info" role="document">
+    <!--Content-->
+    <div class="modal-content">
+      <!--Header-->
+      <div class="modal-header">
+        <p class="heading lead">Ariel Halevi CV</p>
+
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-label="Close"
+          (click)="frame.hide()"
+        >
+          <span aria-hidden="true" class="white-text">&times;</span>
+        </button>
+      </div>
+
+      <!--Body-->
+      <div class="modal-body">
+              <img class="img-fluid" src="/src/assets/CVpartA.PNG" alt="Image of ballons flying over canyons with mask pattern one.">
+              <!-- <div class="mask pattern-1 flex-center waves-effect waves-light">
+                <p class="white-text"></p>
+              </div> -->
+          <!-- <mdb-icon
+            fas
+            icon="check"
+            size="4x"
+            class="mb-3 animated rotateIn"
+          ></mdb-icon> -->
+          <!-- <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit
+            iusto nulla aperiam blanditiis ad consequatur in dolores culpa,
+            dignissimos, eius non possimus fugiat. Esse ratione fuga, enim, ab
+            officiis totam.
+          </p> -->
+      </div>
+
+      <!--Footer-->
+      <div class="modal-footer justify-content-center">
+        <img src="/src/assets/CVpartA.PNG" class="img-fluid">
+        <a
+          type="button"
+          mdbBtn
+          color="primary"
+          class="waves-light"
+          mdbWavesEffect
+          >Get it now
+          <mdb-icon far icon="gem" class="ml-1"></mdb-icon>
+      </a>
+        <a
+          type="button"
+          mdbBtn
+          color="primary"
+          outline="true"
+          class="waves-effect"
+          mdbWavesEffect
+          (click)="frame.hide()"
+          >No, thanks</a
+        >
+      </div>
+    </div>
+    <!--/.Content-->
+  </div>
+</div>

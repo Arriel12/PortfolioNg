@@ -1,0 +1,29 @@
+.intro-header {
+  height: unset !important;
+}
+.top-nav-collapse {
+  background-color: hsl(202, 63%, 38%) !important;
+}
+.view {
+  height: 100vh !important;
+}
+.navbar:not(.top-nav-collapse) {
+  background: transparent !important;
+}
+@media (max-width: 768px) {
+  .navbar:not(.top-nav-collapse) {
+  background: #20c04b !important;
+    }
+}
+.rgba-gradient .full-bg-img {
+  background: linear-gradient(45deg, rgba(201, 221, 22, 0.6), rgba(9, 44, 197, 0.815) 100%);
+  height: 100%;
+}
+@media (max-width: 740px) {
+  .full-height,
+  .full-height body,
+  .full-height header,
+  .full-height header .view {
+    height: 700px;
+  }
+}
