@@ -18,19 +18,44 @@
         <li class="nav-item waves-light" mdbWavesEffect>
           <a class="nav-link" href="#portfolio">PORTFOLIO</a>
         </li>
-
         <li class="nav-item waves-light" mdbWavesEffect>
-          <a class="nav-link" href="#about">MY C.V</a>
+          <a class="nav-link" href="#about">My SERVICES</a>
+        </li>
+        <li class="nav-item waves-light" mdbWavesEffect>
+          <a class="nav-link" href="#about"
+          data-toggle="modal"
+          data-target="#basicExample"
+          (click)="frame.show()"
+          >C.V</a>
+        </li>
+        <li class="nav-item waves-light" mdbWavesEffect>
+          <a class="nav-link" href="#myHobbies">HOBBIES</a>
         </li>
         <li class="nav-item waves-light" mdbWavesEffect>
           <a class="nav-link" href="#contact">CONTACT</a>
         </li>
       </ul>
-      <form class="form-inline waves-light" mdbWavesEffect>
+      <!-- <form class="form-inline waves-light" mdbWavesEffect>
         <div class="md-form">
           <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
         </div>
-      </form>
+      </form> -->
+  <span style="color:white !important">
+       <!--Facebook-->
+    <a href="https://www.facebook.com/ariel.halevi.75/about" target="_blank" class="icons-sm fb-ic waves-light"><i class="fab fa-facebook-f fa-2x"> </i></a>
+    <!--Linkedin-->
+    <a href="https://www.linkedin.com/in/ariel-halevi-898799143/" target="_blank" style="color:white;" class="icons-sm li-ic"><i class="fab fa-linkedin-in fa-2x"> </i></a>
+    <!--Instagram-->
+    <!-- <a class="icons-sm ins-ic"><i class="fab fa-instagram fa-2x"> </i></a> -->
+    <!--Twitter-->
+    <a href="https://twitter.com/Ariel80446950" target="_blank" class="icons-sm tw-ic" ><i class="fab fa-twitter fa-2x"> </i></a>
+    <!--Github-->
+    <a href="https://github.com/Arriel12" target="_blank" style="color:white" class="icons-sm git-ic"><i class="fab fa-github fa-2x"> </i></a>
+    <!--Youtube-->
+    <a href="https://www.youtube.com/channel/UC6p3euafYE-Gb9gbYu4NvqQ?view_as=subscriber" target="_blank" style="color:red" class="icons-sm yt-ic"><i class="fab fa-youtube fa-2x"> </i></a>
+    <!--Stack Overflow-->
+    <!-- <a class="icons-sm so-ic"><i class="fab fa-stack-overflow fa-2x"> </i></a> -->
+  </span>
     </links>
   </mdb-navbar>
 
@@ -47,7 +72,7 @@
             <!-- <div class="col-lg-6 wow fadeIn mb-5 text-center text-lg-left">-->
               <div class="white-text">
                 <h2 class="h1 h1-responsive font-bold wow fadeInLeft" data-wow-delay="0.9s">
-                  Welcome To My Portfolio Website<span><img src="https://thumbs.gfycat.com/FarawayJampackedAmericancrow-small.gif" height="38px" width="38px"></span>
+                  Welcome To My Portfolio Site
                   </h2>
                   <h4 class="h1 h1-responsive font-bold wow fadeInLeft" data-wow-delay="0.9s">
                       I'm <span class="h1 font-bold wow" style="color:blue; font-weight: 900;">Ariel Halevi</span>, a Full-Stack Web Developer!
@@ -83,3 +108,55 @@
 
 </header>
 <!--Main Navigation-->
+
+
+<div style="overflow-y: auto" mdbModal #frame="mdbModal" class="modal fade top"
+  id="frameModalTop" tabindex="-1"  role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true" >
+  <div class="modal-dialog modal-notify modal-info modal-lg" role="document">
+    <!--Content-->
+    <div class="modal-content">
+      <!--Header-->
+      <div class="modal-header">
+        <p class="heading lead">Ariel Halevi CV</p>
+
+        <button type="button"  class="close"  data-dismiss="modal" aria-label="Close"
+          (click)="frame.hide()">
+          <span aria-hidden="true" class="white-text">&times;</span>
+        </button>
+      </div>
+
+      <!--Body-->
+      <div class="modal-body">
+              <img class="img-fluid"
+              src="https://scontent.ftlv6-1.fna.fbcdn.net/v/t1.0-9/s720x720/92498665_10222121856136802_2541780483499360256_o.jpg?_nc_cat=107&_nc_sid=730e14&_nc_ohc=5Lc_5xTKFkIAX-YNZLm&_nc_ht=scontent.ftlv6-1.fna&_nc_tp=7&oh=79128356a3ce94edd5f81e83aa01d96c&oe=5EB4A9BD"
+              alt="cv"
+              width="100%"
+              height="100%">
+      </div>
+
+      <!--Footer-->
+      <div class="modal-footer justify-content-center">
+        <a
+          type="button"
+          mdbBtn
+          color="primary"
+          class="waves-light"
+          mdbWavesEffect
+          >Download it
+          <mdb-icon fas icon="file-download"></mdb-icon>
+      </a>
+        <a
+          type="button"
+          mdbBtn
+          color="primary"
+          outline="true"
+          class="waves-effect"
+          mdbWavesEffect
+          (click)="frame.hide()"
+          >No, thanks</a
+        >
+      </div>
+    </div>
+    <!--/.Content-->
+  </div>
